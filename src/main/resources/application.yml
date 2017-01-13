@@ -1,0 +1,23 @@
+server:
+  porT: 9000
+  error:
+      whitelabel:
+          enabled: false
+  context-path: /tipodecambio/
+
+# Templates reloading during development
+spring:
+    thymeleaf:
+        cache: false
+    resources:
+        cache-period: 0
+
+#        static-locations: /static/
+
+#
+#springfox:
+#  documentation:
+#   swagger:
+#    v2:
+#      path:
+
