@@ -1,6 +1,5 @@
-
 server:
-  porT: 9000
+  porT: 9001
   error:
       whitelabel:
           enabled: false
@@ -8,8 +7,6 @@ server:
 
 # Templates reloading during development
 spring:
-    profiles:
-        active: dev
     thymeleaf:
         cache: false
     resources:

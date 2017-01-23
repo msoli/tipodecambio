@@ -8,6 +8,7 @@ import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.builders.ResponseMessageBuilder;
 import springfox.documentation.schema.ModelRef;
 import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
 import springfox.documentation.service.ResponseMessage;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
@@ -49,12 +50,13 @@ public class SwaggerConfig {
     }
 
     private ApiInfo apiInfo() {
+
         ApiInfo apiInfo = new ApiInfo(
                 "REST API Tipo de cambio",
                 "API para obtener el tipo de cambio del diario oficial.",
                 "API 2.0",
                 "Terms of service",
-                "clickfactura.mx",
+                new Contact("Test", "test", "test"),
                 "License of API",
                 "API license");
         return apiInfo;
